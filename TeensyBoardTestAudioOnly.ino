@@ -30,7 +30,7 @@ void set_adc1_to_3v3()
 {
 
   ADC1_SC3 = 0; // cancel calibration
-  ADC1_SC2 = ADC_SC2_REFSEL(0); // vcc/ext ref
+  ADC1_SC2 = ADC_SC2_REFSEL(0); // vcc/ext ref 3.3v
 
   ADC1_SC3 = ADC_SC3_CAL;  // begin calibration
 
